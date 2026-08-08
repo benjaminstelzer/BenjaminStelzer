@@ -14,6 +14,9 @@ and AI-assisted software work.
   protects framework ownership, usability, accessibility, and rendered evidence.
 - [Scoville Scribe](https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop)
   preserves meaning, terminology, and factual claims during writing work.
+- [Scoville Plan](https://github.com/benjaminstelzer/scoville-plan)
+  keeps durable Plans and Work Items in reviewable repository files without a
+  planning CLI.
 - [Compact Handoff](https://github.com/benjaminstelzer/compact-handoff)
   creates copy-ready context handoffs for unfinished agent sessions.
 
