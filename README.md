@@ -17,8 +17,9 @@ and AI-assisted software work.
 - [Scoville Plan](https://github.com/benjaminstelzer/scoville-plan)
   keeps durable Plans and Work Items in reviewable repository files without a
   planning CLI.
-- [Compact Handoff](https://github.com/benjaminstelzer/compact-handoff)
-  creates copy-ready context handoffs for unfinished agent sessions.
+- [Scoville Handoff](https://github.com/benjaminstelzer/scoville-handoff)
+  transfers active work as a compact, copy-ready continuation prompt without
+  losing authority, ownership, evidence, hazards, or the next safe action.
 
 ## Codex prompt
 
