@@ -65,7 +65,7 @@ difference between evidence and optimism.
 
 The system prompt governs general collaboration. A selected Agent Skill adds a
 narrower contract for the task at hand. Scoville Scribe owns meaning and
-fidelity; Scoville Code owns engineering, and neither gets to borrow authority
+fidelity. Scoville Code owns engineering. Neither gets to borrow authority
 from a nice sentence.
 
 Project-specific scope, installation, evidence, sources, and licensing stay in
