@@ -8,6 +8,9 @@ and AI-assisted software work.
 - [Ask Claude for Codex](https://github.com/benjaminstelzer/ask-claude-for-codex)
   gives Codex a read-only second opinion from Claude Code with selectable model,
   reasoning effort, budget, and persistent conversations.
+- [Scoville Brainstorm](https://github.com/benjaminstelzer/scoville-brainstorm)
+  explores materially different solution mechanisms before a material choice
+  and returns a decision-ready shortlist without implementing it.
 - [Scoville Code](https://github.com/benjaminstelzer/scoville-code-anti-ai-slop)
   keeps engineering agents focused on the requested observable outcome.
 - [Scoville UI](https://github.com/benjaminstelzer/scoville-ui-anti-ai-slop)
