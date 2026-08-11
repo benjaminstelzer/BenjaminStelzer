@@ -40,9 +40,6 @@ difference between evidence and optimism.
 - [Ask Claude for Codex](https://github.com/benjaminstelzer/ask-claude-for-codex)
   gives Codex a read-only second opinion from Claude Code with selectable model,
   reasoning effort, budget, and persistent conversations.
-- [Imitate Me](https://github.com/benjaminstelzer/imitate-me) applies my
-  cross-language writing voice without taking ownership of facts, meaning,
-  terminology, or format.
 - [Scoville Brainstorm](https://github.com/benjaminstelzer/scoville-brainstorm)
   explores materially different mechanisms before selection.
 - [Scoville Code](https://github.com/benjaminstelzer/scoville-code-anti-ai-slop)
@@ -67,10 +64,9 @@ difference between evidence and optimism.
 ## How it fits together
 
 The system prompt governs general collaboration. A selected Agent Skill adds a
-narrower contract for the task at hand. `Imitate Me` changes linguistic
-realization only; Scoville Scribe still owns meaning and fidelity, Scoville Code
-still owns engineering, and neither gets to borrow authority from a nice
-sentence.
+narrower contract for the task at hand. Scoville Scribe owns meaning and
+fidelity; Scoville Code owns engineering, and neither gets to borrow authority
+from a nice sentence.
 
 Project-specific scope, installation, evidence, sources, and licensing stay in
 the repositories that define them. Install only the part that solves the actual
