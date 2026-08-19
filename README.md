@@ -40,6 +40,10 @@ difference between evidence and optimism.
 - [Ask Claude for Codex](https://github.com/benjaminstelzer/ask-claude-for-codex)
   gives Codex a read-only second opinion from Claude Code with selectable model,
   reasoning effort, budget, and persistent conversations.
+- [Ask Claude and SOL for Codex](https://github.com/benjaminstelzer/ask-claude-and-sol-for-codex)
+  runs Claude Code and a separate SOL session in parallel, returns both
+  read-only opinions together, and preserves both conversations for follow-up
+  questions.
 
 ## Scoville family
 
