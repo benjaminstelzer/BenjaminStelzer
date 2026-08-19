@@ -35,13 +35,19 @@ difference between evidence and optimism.
   Combining everything by default would merely produce a very organized kind
   of confusion.
 
-## Agent Skills
+## Codex Skills
 
 - [Ask Claude for Codex](https://github.com/benjaminstelzer/ask-claude-for-codex)
   gives Codex a read-only second opinion from Claude Code with selectable model,
   reasoning effort, budget, and persistent conversations.
+
+## Scoville family
+
 - [Scoville Brainstorm](https://github.com/benjaminstelzer/scoville-brainstorm)
   explores materially different mechanisms before selection.
+- [Scoville Research](https://github.com/benjaminstelzer/scoville-research)
+  turns web, GitHub, and scholarly evidence into a decision-ready,
+  claim-traceable result.
 - [Scoville Code](https://github.com/benjaminstelzer/scoville-code-anti-ai-slop)
   owns engineering scope, implementation, risk, and validation.
 - [Scoville UI](https://github.com/benjaminstelzer/scoville-ui-anti-ai-slop)
