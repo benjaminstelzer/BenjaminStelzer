@@ -66,10 +66,10 @@ difference between evidence and optimism.
 
 ## Codex prompt
 
-- [Codex, Fable-calibrated style](https://github.com/benjaminstelzer/codex-fable-like-system-prompt-for-gpt-5.6-sol)
-  keeps Codex's operating machinery and changes the collaboration layer:
-  direct conclusions, explicit reasoning, honest limits, and less conversational
-  padding.
+- [Codex Scoville System Prompt](https://github.com/benjaminstelzer/codex-scoville-system-prompt)
+  keeps Codex's operating contract, makes routine communication terse, and
+  delegates engineering, research, writing, UI, planning, brainstorming, and
+  handoff methods to the applicable Scoville Skills.
 
 ## How it fits together
 
