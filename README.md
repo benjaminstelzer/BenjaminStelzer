@@ -35,16 +35,6 @@ difference between evidence and optimism.
   Combining everything by default would merely produce a very organized kind
   of confusion.
 
-## Codex Skills
-
-- [Ask Claude for Codex](https://github.com/benjaminstelzer/ask-claude-for-codex)
-  gives Codex a read-only second opinion from Claude Code with selectable model,
-  reasoning effort, budget, and persistent conversations.
-- [Ask Claude and SOL for Codex](https://github.com/benjaminstelzer/ask-claude-and-sol-for-codex)
-  runs Claude Code and a separate SOL session in parallel, returns both
-  read-only opinions together, and preserves both conversations for follow-up
-  questions.
-
 ## Scoville family
 
 - [Scoville Brainstorm](https://github.com/benjaminstelzer/scoville-brainstorm)
@@ -70,6 +60,16 @@ difference between evidence and optimism.
   keeps Codex's operating contract, makes routine communication terse, and
   delegates engineering, research, writing, UI, planning, brainstorming, and
   handoff methods to the applicable Scoville Skills.
+
+## Codex Skills
+
+- [Ask Claude for Codex](https://github.com/benjaminstelzer/ask-claude-for-codex)
+  gives Codex a read-only second opinion from Claude Code with selectable model,
+  reasoning effort, budget, and persistent conversations.
+- [Ask Claude and SOL for Codex](https://github.com/benjaminstelzer/ask-claude-and-sol-for-codex)
+  runs Claude Code and a separate SOL session in parallel, returns both
+  read-only opinions together, and preserves both conversations for follow-up
+  questions.
 
 ## How it fits together
 
