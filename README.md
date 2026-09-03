@@ -54,6 +54,13 @@ difference between evidence and optimism.
 - [Scoville Handoff](https://github.com/benjaminstelzer/scoville-handoff)
   transfers active work to another agent or session.
 
+## WordPress Skills
+
+- [WordPress Backend UI](https://github.com/benjaminstelzer/wordpress-backend-ui-skill)
+  defines the UI contract for plugin-owned WordPress 7 backends: surface
+  ownership, vertical flow, responsive behavior, accessibility, i18n, and
+  WordPress defaults before custom CSS.
+
 ## Codex prompt
 
 - [Codex Scoville System Prompt](https://github.com/benjaminstelzer/codex-scoville-system-prompt)
