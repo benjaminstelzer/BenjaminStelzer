@@ -44,9 +44,11 @@ difference between evidence and optimism.
   claim-traceable result.
 - [Scoville Code](https://github.com/benjaminstelzer/scoville-code-anti-ai-slop)
   owns engineering scope, implementation, risk, and validation.
+- [Scoville Design](https://github.com/benjaminstelzer/scoville-design-anti-ai-slop)
+  owns visual definition, art direction, design systems, critique, and repair.
 - [Scoville UI](https://github.com/benjaminstelzer/scoville-ui-anti-ai-slop)
-  owns interface hierarchy, framework fit, accessibility, and rendered
-  evidence.
+  owns framework-aligned implementation, interface mechanics, accessibility,
+  and rendered evidence, with a standalone design fallback.
 - [Scoville Scribe](https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop)
   owns wording, terminology, factual meaning, and source fidelity.
 - [Scoville Plan](https://github.com/benjaminstelzer/scoville-plan) owns durable
