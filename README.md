@@ -3,23 +3,14 @@
 I build practical Agent Skills and developer tools for Codex, Claude Code, and
 AI-assisted software work.
 
-The projects share one concern: an AI agent can produce a great deal of motion
-without necessarily producing the result that was asked for. My tools keep the
-result, the boundaries, and the evidence visible while the machinery does its
-machinery.
-
 ## Why this work?
 
-AI agents are useful precisely because they can move quickly across code,
-research, planning, and writing. The catch is not that they do too little. It is
-that they can do a convincing amount of the wrong thing: another abstraction,
-another plan, another polished paragraph, and suddenly the process has eaten
-the task.
+AI agents can produce a convincing amount of the wrong thing: another
+abstraction, another plan, another polished paragraph, and suddenly the process
+has eaten the task.
 
-I build small, explicit contracts around those failure points. Not to make an
-agent timid, and not to turn every rename into a governance summit. The aim is
-to let it move quickly without losing ownership, meaning, authority, or the
-difference between evidence and optimism.
+I build small, explicit contracts around those failure points so agents can
+move quickly without losing ownership, meaning, authority, or evidence.
 
 ## How I work
 
@@ -73,10 +64,14 @@ difference between evidence and optimism.
   read-only opinions together, and preserves both conversations for follow-up
   questions.
 
+- [Ask Claude and Astra for Codex](https://github.com/benjaminstelzer/ask-claude-and-astra-for-codex)
+  pairs Claude Code with a fresh Astra subagent, using Astra with xhigh effort
+  by default and keeping both conversations available for follow-up questions.
+
 ## How it fits together
 
-A selected Agent Skill adds a contract for the task at hand. Scoville Scribe owns meaning and
-fidelity. Scoville Code owns engineering. Neither gets to borrow authority
+A selected Agent Skill adds a contract for the task at hand. Scoville Scribe
+owns meaning and fidelity. Scoville Code owns engineering. Neither gets to borrow authority
 from a nice sentence.
 
 Project-specific scope, installation, evidence, sources, and licensing stay in
