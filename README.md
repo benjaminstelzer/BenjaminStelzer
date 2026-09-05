@@ -63,13 +63,6 @@ difference between evidence and optimism.
   ownership, vertical flow, responsive behavior, accessibility, i18n, and
   WordPress defaults before custom CSS.
 
-## Codex prompt
-
-- [Codex Scoville System Prompt](https://github.com/benjaminstelzer/codex-scoville-system-prompt)
-  keeps Codex's operating contract, makes routine communication terse, and
-  delegates engineering, research, writing, UI, planning, brainstorming, and
-  handoff methods to the applicable Scoville Skills.
-
 ## Codex Skills
 
 - [Ask Claude for Codex](https://github.com/benjaminstelzer/ask-claude-for-codex)
@@ -82,8 +75,7 @@ difference between evidence and optimism.
 
 ## How it fits together
 
-The system prompt governs general collaboration. A selected Agent Skill adds a
-narrower contract for the task at hand. Scoville Scribe owns meaning and
+A selected Agent Skill adds a contract for the task at hand. Scoville Scribe owns meaning and
 fidelity. Scoville Code owns engineering. Neither gets to borrow authority
 from a nice sentence.
 
