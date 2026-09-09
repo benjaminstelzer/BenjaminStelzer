@@ -64,7 +64,7 @@ move quickly without losing ownership, meaning, authority, or evidence.
   read-only opinions together, and preserves both conversations for follow-up
   questions.
 - [Ask Claude and Astra for Codex](https://github.com/benjaminstelzer/ask-claude-and-astra-for-codex)
-  pairs Claude Code with a fresh Astra subagent, using Astra with xhigh effort
+  pairs Claude Code with a fresh Astra project task, using Astra with xhigh effort
   by default and keeping both conversations available for follow-up questions.
 
 ## How it fits together
