@@ -66,6 +66,9 @@ move quickly without losing ownership, meaning, authority, or evidence.
 - [Ask Claude and Astra for Codex](https://github.com/benjaminstelzer/ask-claude-and-astra-for-codex)
   pairs Claude Code with a fresh Astra project task, using Astra with xhigh effort
   by default and keeping both conversations available for follow-up questions.
+- [Ask Astra for Review for Codex](https://github.com/benjaminstelzer/ask-astra-for-review-for-codex)
+  sends questions and review requests to a fresh Astra project task, returns its
+  answer directly, and archives the task while retaining it for follow-up questions.
 
 ## How it fits together
 
