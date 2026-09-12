@@ -5,33 +5,28 @@ AI-assisted software work.
 
 ## Why this work?
 
-AI agents can produce a convincing amount of the wrong thing: another
-abstraction, another plan, another polished paragraph, and suddenly the process
-has eaten the task.
+I use AI agents for real projects, and I keep running into the same problems.
+An agent adds structure before understanding the existing code, rewrites a
+sentence and changes its meaning, or reports a result it has not checked.
 
-I build small, explicit contracts around those failure points so agents can
-move quickly without losing ownership, meaning, authority, or evidence.
+My Skills put instructions around those failures. They should help the agent
+finish the actual task without making every small change a process of its own.
 
 ## How I work
 
-- **The result comes first.** Process earns its place by making the requested
-  outcome safer, clearer, or easier to verify.
-- **Facts survive presentation.** Better prose, cleaner UI, and tighter
-  summaries do not get permission to improve the underlying truth into
-  something else.
-- **Boundaries stay visible.** A read-only review does not become an edit, a
-  suggestion does not become authority, and a passing check proves only what it
-  exercised.
-- **Tools stay composable.** Each Skill owns one concern and can work alone.
-  Combining everything by default would merely produce a very organized kind
-  of confusion.
+I start with the result I need and the project that already exists. Its code,
+terminology and decisions matter more than a new abstraction or a cleaner
+description of something that is still wrong.
 
-I test the Skills, use them in real work, and refine them through SkillOpt and
-other optimization runs. Part of that work is analyzing complete task histories
-to see where the Skills work, where they fail, and where they waste tokens.
-When unwanted behavior shows up in practice, I use those findings to revise the
-Skills and test the changes. Writing the instructions is the starting point.
-The Skills keep changing as I learn what they actually do in use.
+I use the Skills in my own work, then read complete task histories alongside
+the results. That shows where instructions help, where they fail and where
+repeated searches, unnecessary checks or oversized output waste context. I
+revise the instructions around those observations and test the affected cases.
+
+I also use SkillOpt and other optimization runs. They help explore changes,
+including shorter instructions, but I do not keep a proposal just because an
+optimizer produced it. Each Skill has a specific job and can work on its own.
+I combine them when the task needs more than one of those jobs.
 
 ## Scoville family
 
@@ -79,17 +74,9 @@ The Skills keep changing as I learn what they actually do in use.
 
 ## How it fits together
 
-A selected Agent Skill adds a contract for the task at hand. Scoville Scribe
-owns meaning and fidelity. Scoville Code owns engineering. Neither gets to borrow authority
-from a nice sentence.
+Start with the part that solves your problem. Code covers engineering work,
+Scribe covers wording and meaning, and Plan keeps longer work recoverable.
+The other repositories explain their own scope, setup and development.
 
-Project-specific scope, installation, evidence, sources, and licensing stay in
-the repositories that define them. Install only the part that solves the actual
-problem. The collection is a toolbox, not a loyalty program.
-
-## Status
-
-These repositories are independent projects with their own release history and
-validation where applicable. Current behavior, compatibility, and measured
-results stay with each project rather than in a profile snapshot that ages
-quietly and then acts surprised.
+If you are building Skills yourself, the instructions and development accounts
+show the choices behind mine. They are projects I keep revising through use.
