@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.7 - 2026-09-12
+
+- Expanded How I work with Skill testing, SkillOpt and other optimization runs,
+  real use, and iterative improvements based on complete task histories.
+- Included the existing Ask Astra for Review entry in the released profile.
+
 ## v1.0.6 - 2026-09-05
 
 - Added the separate Ask Claude and Astra edition under Codex Skills.

@@ -26,6 +26,13 @@ move quickly without losing ownership, meaning, authority, or evidence.
   Combining everything by default would merely produce a very organized kind
   of confusion.
 
+I test the Skills, use them in real work, and refine them through SkillOpt and
+other optimization runs. Part of that work is analyzing complete task histories
+to see where the Skills work, where they fail, and where they waste tokens.
+When unwanted behavior shows up in practice, I use those findings to revise the
+Skills and test the changes. Writing the instructions is the starting point.
+The Skills keep changing as I learn what they actually do in use.
+
 ## Scoville family
 
 - [Scoville Brainstorm](https://github.com/benjaminstelzer/scoville-brainstorm)
