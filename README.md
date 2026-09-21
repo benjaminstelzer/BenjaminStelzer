@@ -28,7 +28,7 @@ including shorter instructions, but I do not keep a proposal just because an
 optimizer produced it. Each Skill has a specific job and can work on its own.
 I combine them when the task needs more than one of those jobs.
 
-## Scoville family
+## Scoville Family
 
 - [Scoville Brainstorm](https://github.com/benjaminstelzer/scoville-brainstorm)
   explores materially different mechanisms before selection.
@@ -42,6 +42,9 @@ I combine them when the task needs more than one of those jobs.
 - [Scoville UI](https://github.com/benjaminstelzer/scoville-ui-anti-ai-slop)
   owns framework-aligned implementation, interface mechanics, accessibility,
   and rendered evidence, with a standalone design fallback.
+- [Scoville WordPress UI Backend](https://github.com/benjaminstelzer/wordpress-backend-ui-skill)
+  owns plugin-owned WordPress admin interfaces, platform components, spacing,
+  accessibility and internationalization.
 - [Scoville Scribe](https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop)
   owns wording, terminology, factual meaning, and source fidelity.
 - [Scoville Plan](https://github.com/benjaminstelzer/scoville-plan) owns durable
@@ -49,14 +52,7 @@ I combine them when the task needs more than one of those jobs.
 - [Scoville Handoff](https://github.com/benjaminstelzer/scoville-handoff)
   transfers active work to another agent or session.
 
-## WordPress Skills
-
-- [WordPress Backend UI](https://github.com/benjaminstelzer/wordpress-backend-ui-skill)
-  defines the UI contract for plugin-owned WordPress 7 backends: surface
-  ownership, vertical flow, responsive behavior, accessibility, i18n, and
-  WordPress defaults before custom CSS.
-
-## Codex Skills
+## Ask Family
 
 - [Ask Claude for Codex](https://github.com/benjaminstelzer/ask-claude-for-codex)
   gives Codex a read-only second opinion from Claude Code with selectable model,
@@ -66,8 +62,8 @@ I combine them when the task needs more than one of those jobs.
   read-only opinions together, and preserves both conversations for follow-up
   questions.
 - [Ask Claude and Astra for Codex](https://github.com/benjaminstelzer/ask-claude-and-astra-for-codex)
-  pairs Claude Code with a fresh Astra project task, using Astra with xhigh effort
-  by default and keeping both conversations available for follow-up questions.
+  pairs Claude Code with a fresh Astra project task and keeps both conversations
+  available for follow-up questions.
 - [Ask Astra for Review for Codex](https://github.com/benjaminstelzer/ask-astra-for-review-for-codex)
   sends questions and review requests to a fresh Astra project task, returns its
   answer directly, and archives the task while retaining it for follow-up questions.
