@@ -12,6 +12,9 @@ sentence and changes its meaning, or reports a result it has not checked.
 My Skills put instructions around those failures. They should help the agent
 finish the actual task without making every small change a process of its own.
 
+Every Skill started with a gap in my workflow or a specific problem I needed
+to solve.
+
 ## How I work
 
 I start with the result I need and the project that already exists. Its code,
