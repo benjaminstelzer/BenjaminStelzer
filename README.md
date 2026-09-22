@@ -41,27 +41,27 @@ Install the complete [Scoville Suite](https://github.com/benjaminstelzer/scovill
 including Workflow Beta, or choose individual Skills below to match your needs.
 Workflow is included only in the suite.
 
-- [Scoville Brainstorm](https://github.com/benjaminstelzer/scoville-brainstorm)
-  explores materially different mechanisms before selection.
-- [Scoville Research](https://github.com/benjaminstelzer/scoville-research)
-  turns web, GitHub, and scholarly evidence into a decision-ready,
-  claim-traceable result.
 - [Scoville Code](https://github.com/benjaminstelzer/scoville-code-anti-ai-slop)
   owns engineering scope, implementation, risk, and validation.
-- [Scoville Design](https://github.com/benjaminstelzer/scoville-design-anti-ai-slop)
-  owns visual definition, art direction, design systems, critique and repair.
+- [Scoville Plan](https://github.com/benjaminstelzer/scoville-plan) owns durable
+  Plans, Work Items, Decisions, and lifecycle state.
+- [Scoville Scribe](https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop)
+  owns wording, terminology, factual meaning, and source fidelity.
 - [Scoville UI](https://github.com/benjaminstelzer/scoville-ui-anti-ai-slop)
   owns framework-aligned implementation, interface mechanics, accessibility,
   and rendered evidence, with a standalone design fallback.
 - [Scoville WordPress UI Backend](https://github.com/benjaminstelzer/scoville-wordpress-ui-backend-anti-ai-slop)
   owns plugin-owned WordPress admin interfaces, platform components, spacing,
   accessibility and internationalization.
-- [Scoville Scribe](https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop)
-  owns wording, terminology, factual meaning, and source fidelity.
-- [Scoville Plan](https://github.com/benjaminstelzer/scoville-plan) owns durable
-  Plans, Work Items, Decisions, and lifecycle state.
+- [Scoville Design](https://github.com/benjaminstelzer/scoville-design-anti-ai-slop)
+  owns visual definition, art direction, design systems, critique and repair.
 - [Scoville Handoff](https://github.com/benjaminstelzer/scoville-handoff)
   transfers active work to another agent or session.
+- [Scoville Research](https://github.com/benjaminstelzer/scoville-research)
+  turns web, GitHub, and scholarly evidence into a decision-ready,
+  claim-traceable result.
+- [Scoville Brainstorm](https://github.com/benjaminstelzer/scoville-brainstorm)
+  explores materially different mechanisms before selection.
 
 ## Ask Family
 
