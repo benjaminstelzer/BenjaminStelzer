@@ -31,7 +31,7 @@ I combine them when the task needs more than one of those jobs.
 ## Scoville Family
 
 [Scoville Suite](https://github.com/benjaminstelzer/scoville-suite) brings the
-Skills together. Its Codex-only Workflow coordinates plan-driven execution
+Skills together. Its Codex-only Workflow Beta coordinates plan-driven execution
 and is available with the suite, not as a separate repository. Each specialist
 Skill retains its own scope and host requirements.
 
