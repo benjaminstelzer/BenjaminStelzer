@@ -30,6 +30,11 @@ I combine them when the task needs more than one of those jobs.
 
 ## Scoville Family
 
+[Scoville Suite](https://github.com/benjaminstelzer/scoville-suite) brings the
+Skills together. Its Codex-only Workflow coordinates plan-driven execution
+and is available with the suite, not as a separate repository. Each specialist
+Skill retains its own scope and host requirements.
+
 - [Scoville Brainstorm](https://github.com/benjaminstelzer/scoville-brainstorm)
   explores materially different mechanisms before selection.
 - [Scoville Research](https://github.com/benjaminstelzer/scoville-research)
@@ -42,7 +47,7 @@ I combine them when the task needs more than one of those jobs.
 - [Scoville UI](https://github.com/benjaminstelzer/scoville-ui-anti-ai-slop)
   owns framework-aligned implementation, interface mechanics, accessibility,
   and rendered evidence, with a standalone design fallback.
-- [Scoville WordPress UI Backend](https://github.com/benjaminstelzer/wordpress-backend-ui-skill)
+- [Scoville WordPress UI Backend](https://github.com/benjaminstelzer/scoville-wordpress-ui-backend-anti-ai-slop)
   owns plugin-owned WordPress admin interfaces, platform components, spacing,
   accessibility and internationalization.
 - [Scoville Scribe](https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop)
@@ -53,6 +58,9 @@ I combine them when the task needs more than one of those jobs.
   transfers active work to another agent or session.
 
 ## Ask Family
+
+[Ask Suite for Codex](https://github.com/benjaminstelzer/ask-suite-for-codex)
+groups the independent second-opinion Skills for Codex.
 
 - [Ask Claude for Codex](https://github.com/benjaminstelzer/ask-claude-for-codex)
   gives Codex a read-only second opinion from Claude Code with selectable model,
@@ -67,6 +75,8 @@ I combine them when the task needs more than one of those jobs.
 - [Ask Astra for Review for Codex](https://github.com/benjaminstelzer/ask-astra-for-review-for-codex)
   sends questions and review requests to a fresh Astra project task, returns its
   answer directly, and archives the task while retaining it for follow-up questions.
+- [Ask SOL for Review for Codex](https://github.com/benjaminstelzer/ask-sol-for-review-for-codex)
+  sends a read-only review request to a fresh SOL project task.
 
 ## How it fits together
 
