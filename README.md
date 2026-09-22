@@ -30,10 +30,9 @@ I combine them when the task needs more than one of those jobs.
 
 ## Scoville Family
 
-[Scoville Suite](https://github.com/benjaminstelzer/scoville-suite) brings the
-Skills together. Its Codex-only Workflow Beta coordinates plan-driven execution
-and is available with the suite, not as a separate repository. Each specialist
-Skill retains its own scope and host requirements.
+Install the complete [Scoville Suite](https://github.com/benjaminstelzer/scoville-suite),
+including Workflow Beta, or choose individual Skills below to match your needs.
+Workflow is included only in the suite.
 
 - [Scoville Brainstorm](https://github.com/benjaminstelzer/scoville-brainstorm)
   explores materially different mechanisms before selection.
@@ -59,8 +58,8 @@ Skill retains its own scope and host requirements.
 
 ## Ask Family
 
-[Ask Suite for Codex](https://github.com/benjaminstelzer/ask-suite-for-codex)
-groups the independent second-opinion Skills for Codex.
+Install the complete [Ask Suite for Codex](https://github.com/benjaminstelzer/ask-suite-for-codex)
+or choose individual second-opinion Skills below to match your needs.
 
 - [Ask Claude for Codex](https://github.com/benjaminstelzer/ask-claude-for-codex)
   gives Codex a read-only second opinion from Claude Code with selectable model,
