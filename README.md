@@ -18,15 +18,19 @@ I start with the result I need and the project that already exists. Its code,
 terminology and decisions matter more than a new abstraction or a cleaner
 description of something that is still wrong.
 
-I use the Skills in my own work, then read complete task histories alongside
-the results. That shows where instructions help, where they fail and where
-repeated searches, unnecessary checks or oversized output waste context. I
-revise the instructions around those observations and test the affected cases.
+I use the Skills in real projects and have complete task histories analyzed
+alongside the results. Those analyses help identify where instructions fail,
+where they leave too much room for interpretation and where repeated searches,
+unnecessary checks or oversized output waste context.
 
-I also use SkillOpt and other optimization runs. They help explore changes,
-including shorter instructions, but I do not keep a proposal just because an
-optimizer produced it. Each Skill has a specific job and can work on its own.
-I combine them when the task needs more than one of those jobs.
+I combine targeted simulation runs with several optimization workflows,
+including SkillOpt. This is an iterative process over months: problems from
+real projects feed into corrections, the affected cases are tested, and the
+Skills are refined again as new problems emerge. An optimization proposal is
+something to test, not a reason to keep the change.
+
+Each Skill has a specific job and works independently. I combine them when
+the task needs more than one of those jobs.
 
 ## Scoville Family
 
