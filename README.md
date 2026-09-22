@@ -74,7 +74,8 @@ groups the independent second-opinion Skills for Codex.
   available for follow-up questions.
 - [Ask Astra for Review for Codex](https://github.com/benjaminstelzer/ask-astra-for-review-for-codex)
   sends questions and review requests to a fresh Astra project task, returns its
-  answer directly, and archives the task while retaining it for follow-up questions.
+  answer directly, and keeps the task open for follow-up questions. The adviser
+  asks before archiving it.
 - [Ask SOL for Review for Codex](https://github.com/benjaminstelzer/ask-sol-for-review-for-codex)
   sends a read-only review request to a fresh SOL project task.
 
