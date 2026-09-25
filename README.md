@@ -37,58 +37,31 @@ the task needs more than one of those jobs.
 
 ## Scoville Family
 
-Install the complete [Scoville Suite](https://github.com/benjaminstelzer/scoville-suite),
-including Workflow Beta, or choose individual Skills below to match your needs.
-Workflow is included only in the suite.
+Choose the complete [Scoville Suite](https://github.com/benjaminstelzer/scoville-suite)
+for general Agent Skills hosts, including Claude Code, or the
+[Scoville Suite for Codex](https://github.com/benjaminstelzer/scoville-suite-for-codex)
+for Codex. Both include Code, Plan, UI and Handoff. The Codex suite also includes
+Workflow, Ask and Setup. Workflow and Setup are available only in that suite.
 
-- [Scoville Code](https://github.com/benjaminstelzer/scoville-code-anti-ai-slop)
-  owns engineering scope, implementation, risk, and validation.
-- [Scoville Plan](https://github.com/benjaminstelzer/scoville-plan) owns durable
-  Plans, Work Items, Decisions, and lifecycle state.
-- [Scoville Scribe](https://github.com/benjaminstelzer/scoville-scribe-anti-ai-slop)
-  owns wording, terminology, factual meaning, and source fidelity.
-- [Scoville UI](https://github.com/benjaminstelzer/scoville-ui-anti-ai-slop)
-  owns framework-aligned implementation, interface mechanics, accessibility,
-  and rendered evidence, with a standalone design fallback.
-- [Scoville WordPress UI Backend](https://github.com/benjaminstelzer/scoville-wordpress-ui-backend-anti-ai-slop)
-  owns plugin-owned WordPress admin interfaces, platform components, spacing,
-  accessibility and internationalization.
-- [Scoville Design](https://github.com/benjaminstelzer/scoville-design-anti-ai-slop)
-  owns visual definition, art direction, design systems, critique and repair.
+- [Scoville Code](https://github.com/benjaminstelzer/scoville-code)
+  owns engineering scope, implementation, risk and validation.
+- [Scoville Plan](https://github.com/benjaminstelzer/scoville-plan)
+  keeps Plans, Work Items and Decisions recoverable across sessions.
+- [Scoville UI](https://github.com/benjaminstelzer/scoville-ui)
+  implements and checks interfaces through their framework and design system,
+  including plugin-owned WordPress admin pages.
 - [Scoville Handoff](https://github.com/benjaminstelzer/scoville-handoff)
   transfers active work to another agent or session.
-- [Scoville Research](https://github.com/benjaminstelzer/scoville-research)
-  turns web, GitHub, and scholarly evidence into a decision-ready,
-  claim-traceable result.
-- [Scoville Brainstorm](https://github.com/benjaminstelzer/scoville-brainstorm)
-  explores materially different mechanisms before selection.
+- [Scoville Ask for Codex](https://github.com/benjaminstelzer/scoville-ask-for-codex)
+  gets independent read-only advice from configured Codex or Claude advisers.
 
-## Ask Family
-
-Install the complete [Ask Suite for Codex](https://github.com/benjaminstelzer/ask-suite-for-codex)
-or choose individual second-opinion Skills below to match your needs.
-
-- [Ask Claude for Codex](https://github.com/benjaminstelzer/ask-claude-for-codex)
-  gives Codex a read-only second opinion from Claude Code with selectable model,
-  reasoning effort, budget, and persistent conversations.
-- [Ask Claude and SOL for Codex](https://github.com/benjaminstelzer/ask-claude-and-sol-for-codex)
-  runs Claude Code and a separate SOL session in parallel, returns both
-  read-only opinions together, and preserves both conversations for follow-up
-  questions.
-- [Ask Claude and Astra for Codex](https://github.com/benjaminstelzer/ask-claude-and-astra-for-codex)
-  pairs Claude Code with a fresh Astra project task and keeps both conversations
-  available for follow-up questions.
-- [Ask Astra for Review for Codex](https://github.com/benjaminstelzer/ask-astra-for-review-for-codex)
-  sends questions and review requests to a fresh Astra project task, returns its
-  answer directly, and keeps the task open for follow-up questions. The adviser
-  asks before archiving it.
-- [Ask SOL for Review for Codex](https://github.com/benjaminstelzer/ask-sol-for-review-for-codex)
-  sends a read-only review request to a fresh SOL project task.
+Individual repositories provide standalone packages. Suite installations use
+the complete package set from the chosen suite.
 
 ## How it fits together
 
 Start with the part that solves your problem. Code covers engineering work,
-Scribe covers wording and meaning, and Plan keeps longer work recoverable.
+UI covers interfaces, and Plan keeps longer work recoverable.
 The other repositories explain their own scope, setup and development.
 
 If you are building Skills yourself, the instructions and development accounts
