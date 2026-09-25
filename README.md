@@ -37,9 +37,10 @@ the task needs more than one of those jobs.
 
 ## Scoville Family
 
-Install the complete [Scoville Suite](https://github.com/benjaminstelzer/scoville-suite),
-including Workflow Beta, or choose individual Skills below to match your needs.
-Workflow is included only in the suite.
+Choose the [Scoville Suite](https://github.com/benjaminstelzer/scoville-suite)
+for compatible agent hosts, or [Scoville Suite for Codex](https://github.com/benjaminstelzer/scoville-suite-for-codex)
+for Codex with Workflow Beta. The Codex edition requires Python and uses its
+bundled helpers. Individual Skills are listed below.
 
 - [Scoville Code](https://github.com/benjaminstelzer/scoville-code-anti-ai-slop)
   owns engineering scope, implementation, risk, and validation.
