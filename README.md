@@ -14,6 +14,13 @@ codebase, build usable interfaces, check results and carry the goal and progress
 across conversations. The aim is to finish the actual task with fewer repeated
 explanations, unnecessary changes and unsupported claims.
 
+Scoville Workflow extends this to longer autonomous work. In my projects,
+it lets agents work through planned tasks over several days with very little
+intervention from me. Workers implement and test changes, independent reviewers
+check the results, and findings feed back into corrections. This loop helps
+catch mistakes before later work builds on them and reduces the risk of
+autonomous changes drifting away from the plan.
+
 Each Skill addresses a specific gap I encountered in project work, keeping
 the effort proportionate to the task.
 
