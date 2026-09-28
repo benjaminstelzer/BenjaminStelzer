@@ -83,30 +83,19 @@ the complete package set from the chosen suite.
 
 ## How it fits together
 
-Suppose a feature needs backend changes, a new interface and several rounds
-of testing. Plan keeps the intended outcome, decisions, ordered tasks and
-acceptance criteria in the repository. That gives the work a shared reference
-beyond what any one chat remembers.
+For a feature that touches backend and interface, Plan records the goal,
+decisions, tasks and acceptance criteria. When I ask Workflow to run it in
+Codex, a coordinator assigns work to separate chats. Code guides implementation
+and verification. UI adds interface structure, wording, interaction and
+rendered checks.
 
-When I ask Workflow to run that Plan in Codex, a coordinator assigns bounded
-pieces to worker chats. Code guides the implementation: understand the existing
-code, change the responsible parts and verify the affected behavior. Where the
-task includes an interface, UI adds guidance for structure, wording,
-interaction and checks of the rendered result.
+Reviewers inspect the results, findings lead to corrections, and accepted
+progress goes back into the Plan. Successor chats continue from that record
+and the open issues, keeping longer work moving across context windows.
 
-At the required review points, separate reviewers inspect the work. Findings
-lead to corrections, while accepted results and remaining work are recorded
-in the Plan. When a chat needs a successor, Workflow carries forward the
-assignment and open issues. The next chat can continue from recorded progress
-instead of reconstructing the project from a long conversation.
+Setup controls model and Workflow settings. Ask brings in independent Codex
+or Claude advice when needed. Handoff prepares a continuation prompt for
+transfers outside Workflow.
 
-Setup manages the project's model and Workflow settings. If a question needs
-another perspective, Ask can bring in independent advice from configured
-Codex or Claude advisers. Handoff serves an explicitly requested transfer
-outside Workflow too, collecting the current goal, decisions, unfinished work
-and next action into a continuation prompt.
-
-A small fix may only need Code, or Code and UI. Longer work benefits from Plan;
-Workflow adds coordination when I want that Plan carried out across chats.
-The Skills contribute where their roles are needed, without making every task
-go through the full process.
+A small fix may need only Code, or Code and UI. Plan and Workflow add
+continuity and coordination when the work calls for them.
