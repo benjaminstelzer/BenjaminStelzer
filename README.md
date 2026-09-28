@@ -23,7 +23,7 @@ autonomous changes drifting away from the plan.
 
 The suite with Workflow is currently available only for Codex, my daily driver.
 A Claude version with Workflow is also planned. The general Scoville Suite
-already supports Claude Code without Workflow.
+already supports Claude Code and other harnesses without Workflow.
 
 Each Skill addresses a specific gap I encountered in project work, keeping
 the effort proportionate to the task.
