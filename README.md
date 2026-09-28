@@ -36,6 +36,17 @@ progress goes back into the Plan, and successor chats receive the unfinished
 assignment and open issues. Work can continue without reconstructing the
 project from a long conversation.
 
+```mermaid
+flowchart TD
+    P["Plan: goal, tasks and acceptance criteria"] --> C["Workflow coordinator"]
+    C --> W["Worker: implement and test<br/>Code + UI where needed"]
+    W --> R["Review boundary<br/>Independent review when required"]
+    R -->|Findings: new worker| W
+    R -->|Required checks pass| A["Coordinator: accept work<br/>and update Plan"]
+    A -->|Work remains| C
+    A -->|Plan complete| D["Done"]
+```
+
 A small fix may need only Code, or Code and UI. Longer tasks add planning
 and coordination while retaining the same engineering foundation.
 
