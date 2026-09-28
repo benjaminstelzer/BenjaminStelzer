@@ -6,14 +6,15 @@ Skills for interfaces, planning, review and coordination.
 
 ## Why I build these Skills
 
-At [dynamitec](https://www.dynamitec.de/), our team works across graphic and
-web design, sound and audio, and AI and software development. Our projects
-range from visual identities and virtual instruments to custom web, desktop
-and mobile applications.
+I am responsible for AI and software development at
+[dynamitec](https://www.dynamitec.de/), where our team also works in design
+and audio. My work includes custom web, desktop and mobile applications.
+The Skills I share here grew out of my own experience using AI agents
+in that work.
 
-In my use of AI agents, I keep encountering the same problems: adding
-structure before understanding the existing code, losing earlier decisions
-or reporting results they have not checked.
+I keep encountering the same problems: agents adding structure before
+understanding the existing code, losing earlier decisions or reporting
+results they have not checked.
 
 Scoville Code addresses the engineering side of this. A change needs to solve
 the actual problem, fit the codebase and come with evidence of what works
