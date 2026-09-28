@@ -6,10 +6,14 @@ Skills for interfaces, planning, review and coordination.
 
 ## Why I build these Skills
 
-At dynamitec, we work on a range of software projects. WordPress plugins are
-one part of that work. In my use of AI agents, I keep encountering the same
-problems: adding structure before understanding the existing code, losing
-earlier decisions or reporting results they have not checked.
+At [dynamitec](https://www.dynamitec.de/), our team works across graphic and
+web design, sound and audio, and AI and software development. Our projects
+range from visual identities and virtual instruments to custom web, desktop
+and mobile applications.
+
+In my use of AI agents, I keep encountering the same problems: adding
+structure before understanding the existing code, losing earlier decisions
+or reporting results they have not checked.
 
 Scoville Code addresses the engineering side of this. A change needs to solve
 the actual problem, fit the codebase and come with evidence of what works
