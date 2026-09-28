@@ -30,24 +30,30 @@ the effort proportionate to the task.
 
 ## How I work
 
-Most improvements start with something that went wrong in a real project.
-I look at the result and the task history to understand what led to it.
-Did the agent miss an instruction, interpret it differently than intended,
-or spend too much time on work that did not help?
+I develop a new Skill when project work exposes a gap I keep having to fill
+myself. That might be explaining the same constraints again, recovering
+decisions between chats or getting an agent to check its work. I define the
+job the Skill should do and where its responsibility ends, then write
+instructions and test cases around it.
 
-I turn those observations into test cases, evaluate the responses and adjust
-the instructions. Then I run the cases again to see whether the change helps
-and whether it causes problems elsewhere. New project experience adds new
-cases, so the Skills keep evolving through that cycle of testing, evaluation
-and adjustment.
+Once a Skill is in use, I look at actual results and task histories to see
+where it falls short. Did the agent miss an instruction, interpret it
+differently than intended or spend time on work that did not help? Those
+observations become test cases for improving the existing Skill.
 
-I also look for repeated searches, unnecessary checks and oversized output
-that consume context without improving the result. The aim is to give agents
-enough direction to solve the problem while keeping the work proportionate.
+I evaluate the responses, adjust the instructions and run the cases again.
+I check whether the change solves the problem and whether it causes trouble
+elsewhere. New experience from projects feeds into the next round of tests,
+evaluation and adjustment.
 
-Each Skill has a specific job. Its description helps the agent recognize when
-that job is needed and select the relevant Skills as work develops. Several
-can contribute when a task spans their roles.
+That also means removing instructions that lead to repeated searches,
+unnecessary checks or oversized output. I want the agent to have enough
+direction to finish the task without making the process heavier than the
+work requires.
+
+Each Skill's description tells the agent which problems it helps solve and
+when to use it. This is how the agent selects the relevant Skills as work
+develops, including several when a task needs their different contributions.
 
 ## Scoville Family
 
