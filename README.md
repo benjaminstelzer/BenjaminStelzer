@@ -9,10 +9,11 @@ I use AI agents for real projects, and I keep running into the same problems.
 An agent adds structure before understanding the existing code, loses earlier
 decisions as work continues, or reports a result it has not checked.
 
-My Skills grew out of those failures. They help agents work within an existing
-codebase, build usable interfaces, check results and carry the goal and progress
-across conversations. The aim is to finish the actual task with fewer repeated
-explanations, unnecessary changes and unsupported claims.
+Scoville Code is the foundation of the suite. I developed it to help agents
+make changes reliably and leave results that can be checked: understand the
+existing code, address the cause, keep the change focused and verify the
+affected behavior. The other Skills add interface guidance, planning and
+coordination around that engineering foundation.
 
 Scoville Workflow extends this to longer autonomous work. In my projects,
 it lets agents work through planned tasks over several days with very little
@@ -87,11 +88,11 @@ the complete package set from the chosen suite.
 
 ## How it fits together
 
-For a feature that touches backend and interface, Plan records the goal,
-decisions, tasks and acceptance criteria. When I ask Workflow to run it in
-Codex, a coordinator assigns work to separate chats. Code guides implementation
-and verification. UI guides structure, wording and interaction, with checks
-of the rendered interface.
+For a feature that touches backend and interface, Code guides how changes
+are implemented and verified. UI adds structure, wording, interaction and
+checks of the rendered interface. Plan records the goal, decisions, tasks and
+acceptance criteria. When I ask Workflow to run that Plan in Codex, a coordinator
+assigns work to separate chats, where Code and UI guide the implementation.
 
 Reviewers inspect the results, findings lead to corrections, and accepted
 progress goes back into the Plan. Successor chats continue from that record
