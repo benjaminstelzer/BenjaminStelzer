@@ -6,11 +6,14 @@ Skills for interfaces, planning, review and coordination.
 
 ## Why I build these Skills
 
-In my projects, agents keep running into the same problems: adding structure
-before understanding the existing code, losing earlier decisions or reporting
-results they have not checked. Scoville Code addresses the engineering side
-of this. A change needs to solve the actual problem, fit the codebase and
-come with evidence of what works and what remains unchecked.
+At dynamitec, we work on a range of software projects. WordPress plugins are
+one part of that work. In my use of AI agents, I keep encountering the same
+problems: adding structure before understanding the existing code, losing
+earlier decisions or reporting results they have not checked.
+
+Scoville Code addresses the engineering side of this. A change needs to solve
+the actual problem, fit the codebase and come with evidence of what works
+and what remains unchecked.
 
 The other Skills grew from the work around those changes. With Scoville
 Workflow, I can now have agents carry out planned tasks over several days
