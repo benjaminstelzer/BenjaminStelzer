@@ -25,7 +25,7 @@ of autonomous changes drifting away from the plan.
 
 ## How it fits together
 
-Take a feature that touches backend and interface, for example. Plan records
+For example, take a feature that touches both backend and interface. Plan records
 the goal, decisions, tasks and acceptance criteria. When I ask Workflow to run it in
 Codex, a coordinator assigns bounded pieces to worker chats. Workers implement
 and test the changes using Code's engineering rules. UI adds the interface
@@ -40,7 +40,7 @@ project from a long conversation.
 flowchart TD
     P["Plan: goal, tasks and acceptance criteria"] --> C["Workflow coordinator"]
     C --> W["Worker: implement and test<br/>Code + UI where needed"]
-    W --> R["Review boundary<br/>Independent review when required"]
+    W --> R["Independent review<br/>when required"]
     R -->|Findings: new worker| W
     R -->|Required checks pass| A["Coordinator: accept work<br/>and update Plan"]
     A -->|Work remains| C
