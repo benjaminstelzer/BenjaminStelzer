@@ -6,11 +6,9 @@ Skills for interfaces, planning, review and coordination.
 
 ## Why I build these Skills
 
-I am responsible for AI and software development at
-[dynamitec](https://www.dynamitec.de/), where our team also works in design
-and audio. My work includes custom web, desktop and mobile applications.
-The Skills I share here grew out of my own experience using AI agents
-in that work.
+I'm part of the team at [dynamitec](https://www.dynamitec.de/).
+I develop the Skills shared here from my own experience working with AI agents
+on real projects.
 
 I keep encountering the same problems: agents adding structure before
 understanding the existing code, losing earlier decisions or reporting
