@@ -77,10 +77,30 @@ the complete package set from the chosen suite.
 
 ## How it fits together
 
-Start with the part that solves your problem. Code covers engineering work,
-UI covers interfaces, Plan keeps longer work recoverable, and Workflow runs
-a Plan across Codex chats.
-The other repositories explain their own scope, setup and development.
+Suppose a feature needs backend changes, a new interface and several rounds
+of testing. Plan keeps the intended outcome, decisions, ordered tasks and
+acceptance criteria in the repository. That gives the work a shared reference
+beyond what any one chat remembers.
 
-If you are building Skills yourself, the instructions and development accounts
-show the choices behind mine. They are projects I keep revising through use.
+When I ask Workflow to run that Plan in Codex, a coordinator assigns bounded
+pieces to worker chats. Code guides the implementation: understand the existing
+code, change the responsible parts and verify the affected behavior. Where the
+task includes an interface, UI adds guidance for structure, wording,
+interaction and checks of the rendered result.
+
+At the required review points, separate reviewers inspect the work. Findings
+lead to corrections, while accepted results and remaining work are recorded
+in the Plan. When a chat needs a successor, Workflow carries forward the
+assignment and open issues. The next chat can continue from recorded progress
+instead of reconstructing the project from a long conversation.
+
+Setup manages the project's model and Workflow settings. If a question needs
+another perspective, Ask can bring in independent advice from configured
+Codex or Claude advisers. Handoff serves an explicitly requested transfer
+outside Workflow too, collecting the current goal, decisions, unfinished work
+and next action into a continuation prompt.
+
+A small fix may only need Code, or Code and UI. Longer work benefits from Plan;
+Workflow adds coordination when I want that Plan carried out across chats.
+The Skills contribute where their roles are needed, without making every task
+go through the full process.
