@@ -6,9 +6,8 @@ Skills for interfaces, planning, review and coordination.
 
 ## Why I build these Skills
 
-I'm part of the team at [dynamitec](https://www.dynamitec.de/).
-I develop the Skills shared here from my own experience working with AI agents
-on real projects.
+I'm part of the team at [dynamitec](https://www.dynamitec.de/) and develop
+these Skills from my own work with AI agents on real projects.
 
 I keep encountering the same problems: agents adding structure before
 understanding the existing code, losing earlier decisions or reporting
@@ -26,8 +25,8 @@ of autonomous changes drifting away from the plan.
 
 ## How it fits together
 
-For a feature that touches backend and interface, Plan records the goal,
-decisions, tasks and acceptance criteria. When I ask Workflow to run it in
+Take a feature that touches backend and interface, for example. Plan records
+the goal, decisions, tasks and acceptance criteria. When I ask Workflow to run it in
 Codex, a coordinator assigns bounded pieces to worker chats. Workers implement
 and test the changes using Code's engineering rules. UI adds the interface
 decisions and checks of the rendered result.
@@ -37,9 +36,6 @@ progress goes back into the Plan, and successor chats receive the unfinished
 assignment and open issues. Work can continue without reconstructing the
 project from a long conversation.
 
-Setup manages model and Workflow settings. Ask brings in independent advice
-when needed. Handoff prepares context for transfers outside Workflow.
-
 A small fix may need only Code, or Code and UI. Longer tasks add planning
 and coordination while retaining the same engineering foundation.
 
@@ -48,10 +44,8 @@ and coordination while retaining the same engineering foundation.
 Choose [Scoville Suite for Codex](https://github.com/benjaminstelzer/scoville-suite-for-codex)
 for Codex, or [Scoville Suite](https://github.com/benjaminstelzer/scoville-suite)
 for Claude Code and other Agent Skills hosts. Both include Code, Plan, UI and
-Handoff. The Codex edition adds Workflow, Ask and Setup.
-
-The suite with Workflow is currently Codex-only because Codex is my daily
-driver. A Claude Code version with Workflow is planned.
+Handoff. The Codex edition adds Workflow, Ask and Setup. Workflow is Codex-only
+for now because Codex is my daily driver. A Claude Code version is planned.
 
 - [Workflow for Codex](https://github.com/benjaminstelzer/scoville-suite-for-codex/tree/main/members/scoville-workflow-for-codex)
   coordinates a repository Plan across workers, reviewers and successor chats.
@@ -64,7 +58,7 @@ driver. A Claude Code version with Workflow is planned.
   covers interface structure, wording, interaction and rendered checks,
   including plugin-owned WordPress admin pages.
 - [Handoff](https://github.com/benjaminstelzer/scoville-handoff)
-  turns unfinished work into a continuation prompt for another session.
+  turns unfinished work into a continuation prompt for transfers outside Workflow.
 - [Ask for Codex](https://github.com/benjaminstelzer/scoville-ask-for-codex)
   gets independent read-only advice from configured Codex or Claude advisers.
 - [Setup](https://github.com/benjaminstelzer/scoville-suite-for-codex/tree/main/members/scoville-setup)
@@ -90,7 +84,6 @@ Those findings become test cases and corrections to the instructions. I
 evaluate the next runs against earlier results, checking the original failure
 and effects elsewhere. Repeated searches, unnecessary checks and oversized
 output matter because they consume time and context needed for the task.
-New project experience feeds into the next cycle of tests and adjustments.
 
 I deliberately test with smaller models than the ones I use day to day.
 The instructions need to work without a stronger model filling in missing
