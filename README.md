@@ -21,6 +21,10 @@ check the results, and findings feed back into corrections. This loop helps
 catch mistakes before later work builds on them and reduces the risk of
 autonomous changes drifting away from the plan.
 
+The suite with Workflow is currently available only for Codex, my daily driver.
+A Claude version with Workflow is also planned. The general Scoville Suite
+already supports Claude Code without Workflow.
+
 Each Skill addresses a specific gap I encountered in project work, keeping
 the effort proportionate to the task.
 
