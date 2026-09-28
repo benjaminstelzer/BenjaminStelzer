@@ -1,7 +1,7 @@
 # Benjamin Stelzer
 
-I build practical Agent Skills and developer tools for Codex, Claude Code, and
-AI-assisted software work.
+I build Agent Skills and developer tools for the software projects I work on
+with Codex and Claude Code.
 
 ## Why this work?
 
@@ -25,35 +25,37 @@ The suite with Workflow is currently available only for Codex, my daily driver.
 A Claude version with Workflow is also planned. The general Scoville Suite
 already supports Claude Code and other harnesses without Workflow.
 
-Each Skill addresses a specific gap I encountered in project work, keeping
-the effort proportionate to the task.
-
 ## How I work
 
-I develop a new Skill when project work exposes a gap I keep having to fill
-myself. That might be explaining the same constraints again, recovering
-decisions between chats or getting an agent to check its work. I define the
-job the Skill should do and where its responsibility ends, then write
-instructions and test cases around it.
+A new Skill starts with a recurring problem in my own projects. Before writing
+instructions, I work out what it needs to solve and whether that belongs in
+an existing Skill. A separate Skill needs a clear responsibility, with test
+cases that make its boundaries visible.
 
-Once a Skill is in use, I look at actual results and task histories to see
-where it falls short. Did the agent miss an instruction, interpret it
-differently than intended or spend time on work that did not help? Those
-observations become test cases for improving the existing Skill.
+To improve existing Skills, I analyze extensive test runs alongside complete
+project conversations. Over the past months, that has helped me understand
+where agents go wrong and which instructions need to change. A plausible
+answer can hide a missed requirement. A useful safeguard can turn into layers of checks
+that cost more than the problem warrants. The full sequence of implementation,
+review and correction shows patterns a single response can miss.
 
-I evaluate the responses, adjust the instructions and run the cases again.
-I check whether the change solves the problem and whether it causes trouble
-elsewhere. New experience from projects feeds into the next round of tests,
-evaluation and adjustment.
+Those findings feed into test cases, revised instructions and another round
+of evaluation. I compare the new results with earlier runs, checking both the
+original failure and effects elsewhere. Repeated searches, unnecessary checks
+and oversized output matter too: they consume time and context that the agent
+needs for the actual work.
 
-That also means removing instructions that lead to repeated searches,
-unnecessary checks or oversized output. I want the agent to have enough
-direction to finish the task without making the process heavier than the
-work requires.
+I deliberately test with smaller models than the ones I use day to day.
+The instructions need to be clear enough for those models to follow, rather
+than relying on a stronger model to fill in missing context or resolve
+ambiguities. Failures in those runs help me find where the wording or sequence
+still needs work.
 
-Each Skill's description tells the agent which problems it helps solve and
-when to use it. This is how the agent selects the relevant Skills as work
-develops, including several when a task needs their different contributions.
+Skill selection gets its own targeted tests. These cover requests near the
+boundary between Skills, tasks that need several Skills and cases where a
+Skill should stay out. I use the results to sharpen descriptions and separate
+responsibilities based on which Skills the agent actually selects and how
+it applies them.
 
 ## Scoville Family
 
@@ -67,9 +69,11 @@ Workflow, Ask and Setup. Workflow and Setup are available only in that suite.
   runs a repository Plan through separate worker, reviewer and successor chats,
   keeping long tasks directed beyond one context window.
 - [Scoville Code](https://github.com/benjaminstelzer/scoville-code)
-  owns engineering scope, implementation, risk and validation.
+  guides implementation, diagnosis and review, with checks proportionate to
+  the consequences of a mistake.
 - [Scoville Plan](https://github.com/benjaminstelzer/scoville-plan)
-  keeps Plans, Work Items and Decisions recoverable across sessions.
+  records goals, tasks, decisions and progress so another session can resume
+  the work.
 - [Scoville UI](https://github.com/benjaminstelzer/scoville-ui)
   implements and checks interfaces through their framework and design system,
   including plugin-owned WordPress admin pages.
@@ -86,8 +90,8 @@ the complete package set from the chosen suite.
 For a feature that touches backend and interface, Plan records the goal,
 decisions, tasks and acceptance criteria. When I ask Workflow to run it in
 Codex, a coordinator assigns work to separate chats. Code guides implementation
-and verification. UI adds interface structure, wording, interaction and
-rendered checks.
+and verification. UI guides structure, wording and interaction, with checks
+of the rendered interface.
 
 Reviewers inspect the results, findings lead to corrections, and accepted
 progress goes back into the Plan. Successor chats continue from that record
