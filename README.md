@@ -6,14 +6,16 @@ AI-assisted software work.
 ## Why this work?
 
 I use AI agents for real projects, and I keep running into the same problems.
-An agent adds structure before understanding the existing code, rewrites a
-sentence and changes its meaning, or reports a result it has not checked.
+An agent adds structure before understanding the existing code, loses earlier
+decisions as work continues, or reports a result it has not checked.
 
-My Skills put instructions around those failures. They should help the agent
-finish the actual task without making every small change a process of its own.
+My Skills grew out of those failures. They help agents work within an existing
+codebase, build usable interfaces, check results and carry the goal and progress
+across conversations. The aim is to finish the actual task with fewer repeated
+explanations, unnecessary changes and unsupported claims.
 
-Every Skill started with a gap in my workflow or a specific problem I needed
-to solve.
+Each Skill addresses a specific gap I encountered in project work, keeping
+the effort proportionate to the task.
 
 ## How I work
 
