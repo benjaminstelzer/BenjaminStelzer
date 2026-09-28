@@ -34,8 +34,10 @@ real projects feed into corrections, the affected cases are tested, and the
 Skills are refined again as new problems emerge. An optimization proposal is
 something to test, not a reason to keep the change.
 
-Each Skill has a specific job and works independently. I combine them when
-the task needs more than one of those jobs.
+Each Skill has a specific job. Its description tells the agent which tasks
+and problems it supports and when to use it. This helps the agent select
+the relevant Skills as work develops, including several when their roles
+complement each other.
 
 ## Scoville Family
 
