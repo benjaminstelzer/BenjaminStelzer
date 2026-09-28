@@ -30,25 +30,24 @@ the effort proportionate to the task.
 
 ## How I work
 
-I start with the result I need and the project that already exists. Its code,
-terminology and decisions matter more than a new abstraction or a cleaner
-description of something that is still wrong.
+Most improvements start with something that went wrong in a real project.
+I look at the result and the task history to understand what led to it.
+Did the agent miss an instruction, interpret it differently than intended,
+or spend too much time on work that did not help?
 
-I use the Skills in real projects and have complete task histories analyzed
-alongside the results. Those analyses help identify where instructions fail,
-where they leave too much room for interpretation and where repeated searches,
-unnecessary checks or oversized output waste context.
+I turn those observations into test cases, evaluate the responses and adjust
+the instructions. Then I run the cases again to see whether the change helps
+and whether it causes problems elsewhere. New project experience adds new
+cases, so the Skills keep evolving through that cycle of testing, evaluation
+and adjustment.
 
-I combine targeted simulation runs with several optimization workflows,
-including SkillOpt. This is an iterative process over months: problems from
-real projects feed into corrections, the affected cases are tested, and the
-Skills are refined again as new problems emerge. An optimization proposal is
-something to test, not a reason to keep the change.
+I also look for repeated searches, unnecessary checks and oversized output
+that consume context without improving the result. The aim is to give agents
+enough direction to solve the problem while keeping the work proportionate.
 
-Each Skill has a specific job. Its description tells the agent which tasks
-and problems it supports and when to use it. This helps the agent select
-the relevant Skills as work develops, including several when their roles
-complement each other.
+Each Skill has a specific job. Its description helps the agent recognize when
+that job is needed and select the relevant Skills as work develops. Several
+can contribute when a task spans their roles.
 
 ## Scoville Family
 
