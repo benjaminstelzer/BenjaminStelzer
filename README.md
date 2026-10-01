@@ -27,24 +27,26 @@ of autonomous changes drifting away from the plan.
 
 For example, take a feature that touches both backend and interface. Plan records
 the goal, decisions, tasks and acceptance criteria. When I ask Workflow to run it in
-Codex, a coordinator assigns bounded pieces to worker chats. Workers implement
+Codex, a runner delegates coordination to manager agents, which assign bounded
+pieces to workers. Workers implement
 and test the changes using Code's engineering rules. UI adds the interface
 decisions and checks of the rendered result.
 
 Separate reviewers inspect the work. Findings lead to corrections, accepted
-progress goes back into the Plan, and successor chats receive the unfinished
+progress goes back into the Plan, and successor managers receive the unfinished
 assignment and open issues. Work can continue without reconstructing the
 project from a long conversation.
 
 ```mermaid
 flowchart TD
-    P["Plan: goal, tasks and acceptance criteria"] --> C["Workflow coordinator"]
+    P["Plan: goal, tasks and acceptance criteria"] --> N["Runner: scope and completion"]
+    N --> C["Manager: coordinate assignments"]
     C --> W["Worker: implement and test<br/>Code + UI where needed"]
     W --> R["Independent review<br/>when required"]
     R -->|Findings: new worker| W
-    R -->|Required checks pass| A["Coordinator: accept work<br/>and update Plan"]
+    R -->|Required checks pass| A["Manager: accept work<br/>and update Plan"]
     A -->|Work remains| C
-    A -->|Plan complete| D["Done"]
+    A -->|Assigned scope complete| D["Runner: report and finish"]
 ```
 
 A small fix may need only Code, or Code and UI. Longer tasks add planning
@@ -54,12 +56,12 @@ and coordination while retaining the same engineering foundation.
 
 Choose [Scoville Suite for Codex](https://github.com/benjaminstelzer/scoville-suite-for-codex)
 for Codex, or [Scoville Suite](https://github.com/benjaminstelzer/scoville-suite)
-for Claude Code and other Agent Skills hosts. Both include Code, Plan, UI and
-Handoff. The Codex edition adds Workflow, Ask and Setup. Workflow is Codex-only
+for Claude Code and other Agent Skills hosts. Both include Code, Plan, UI,
+Handoff and Project Context Cleanup. The Codex edition adds Workflow, Ask and Setup. Workflow is Codex-only
 for now because Codex is my daily driver. A Claude Code version is planned.
 
 - [Workflow for Codex](https://github.com/benjaminstelzer/scoville-suite-for-codex/tree/main/members/scoville-workflow-for-codex)
-  coordinates a repository Plan across workers, reviewers and successor chats.
+  coordinates a repository Plan across manager agents, workers and reviewers.
 - [Code](https://github.com/benjaminstelzer/scoville-code)
   provides engineering guidance for implementation, diagnosis and review,
   with checks proportionate to the consequences of a mistake.
@@ -75,7 +77,12 @@ for now because Codex is my daily driver. A Claude Code version is planned.
 - [Setup](https://github.com/benjaminstelzer/scoville-suite-for-codex/tree/main/members/scoville-setup)
   manages the project's model and Workflow settings.
 
-Each Skill except Workflow and Setup is also available on its own.
+- [Project Context Cleanup](https://github.com/benjaminstelzer/scoville-suite/tree/main/members/scoville-project-context-cleanup)
+  handles requested edits to project rules and index text while preserving meaning,
+  scope and record ownership.
+
+Code, Plan, UI, Handoff and Ask are also available on their own.
+Workflow, Setup and Project Context Cleanup come through their suites.
 
 ## How I work
 
