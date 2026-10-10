@@ -84,6 +84,12 @@ for now because Codex is my daily driver. A Claude Code version is planned.
 Code, Plan, UI, Handoff and Ask are also available on their own.
 Workflow, Setup and Project Context Cleanup come through their suites.
 
+## Applications
+
+- [Plan Viewer downloads](https://github.com/benjaminstelzer/scoville-plan-viewer/releases/latest)
+  provides a read-only desktop view of local Plans, progress and Decisions across
+  projects. Builds and updates are independent of the Scoville Plan Skill.
+
 ## How I work
 
 A new Skill starts with a recurring problem in my own projects. I first check
