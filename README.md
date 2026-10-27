@@ -60,6 +60,10 @@ for Claude Code and other Agent Skills hosts. Both include Code, Plan, UI,
 Handoff and Project Context Cleanup. The Codex edition adds Workflow, Ask and Setup. Workflow is Codex-only
 for now because Codex is my daily driver. A Claude Code version is planned.
 
+[Scoville Suite for Codex Mainloop](https://github.com/benjaminstelzer/scoville-suite-for-codex-mainloop)
+keeps planning, coding and checks in the current chat, with read-only exploration
+and fresh independent reviews. Install it separately from the original Codex suite.
+
 - [Workflow for Codex](https://github.com/benjaminstelzer/scoville-suite-for-codex/tree/main/members/scoville-workflow-for-codex)
   coordinates a repository Plan across manager agents, workers and reviewers.
 - [Code](https://github.com/benjaminstelzer/scoville-code)
