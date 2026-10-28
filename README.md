@@ -25,47 +25,49 @@ of autonomous changes drifting away from the plan.
 
 ## How it fits together
 
-For example, take a feature that touches both backend and interface. Plan records
-the goal, decisions, tasks and acceptance criteria. When I ask Workflow to run it in
-Codex, a runner delegates coordination to manager agents, which assign bounded
-pieces to workers. Workers implement
-and test the changes using Code's engineering rules. UI adds the interface
-decisions and checks of the rendered result.
-
-Separate reviewers inspect the work. Findings lead to corrections, accepted
-progress goes back into the Plan, and successor managers receive the unfinished
-assignment and open issues. Work can continue without reconstructing the
-project from a long conversation.
+Plan records the goal, decisions, original Steps and acceptance criteria. In
+Codex, Mainloop keeps planning, implementation and checks in the current chat.
+Read-only Explorers investigate questions; fresh independent Reviewers inspect
+changed Steps and the complete Work Item. Findings return to one bounded
+correction. Accepted progress and versionable changes go into Plan and Git.
+Code supplies the engineering rules, and UI adds interface and rendered checks.
 
 ```mermaid
 flowchart TD
-    P["Plan: goal, tasks and acceptance criteria"] --> N["Runner: scope and completion"]
-    N --> C["Manager: coordinate assignments"]
-    C --> W["Worker: implement and test<br/>Code + UI where needed"]
-    W --> R["Independent review<br/>when required"]
-    R -->|Findings: new worker| W
-    R -->|Required checks pass| A["Manager: accept work<br/>and update Plan"]
-    A -->|Work remains| C
-    A -->|Assigned scope complete| D["Runner: report and finish"]
+  plan["Plan: goal, Steps and acceptance"] --> select["Current chat: select one original Step"]
+  select --> inquiry{"Need investigation?"}
+  inquiry -->|yes| explore["Read-only Explorer"]
+  explore --> implement["Current chat: implement and check"]
+  inquiry -->|no| implement
+  implement --> needed{"Changes or open Step review?"}
+  needed -->|yes| review["Fresh independent Step Reviewer"]
+  review --> findings{"Material findings?"}
+  findings -->|yes| implement
+  findings -->|no| record["Record accepted progress; commit versionable changes"]
+  needed -->|no| record
+  record --> more{"More Steps?"}
+  more -->|yes| select
+  more -->|no| closure["Fresh closure review: all Steps and Acceptance"]
+  closure --> accepted{"Acceptance met?"}
+  accepted -->|no| select
+  accepted -->|yes| done["Record Work Item completion"]
 ```
 
 A small fix may need only Code, or Code and UI. Longer tasks add planning
-and coordination while retaining the same engineering foundation.
+and the Workflow loop while retaining the same engineering foundation.
 
 ## Scoville Suite
 
-Choose [Scoville Suite for Codex](https://github.com/benjaminstelzer/scoville-suite-for-codex)
+Choose [Scoville Suite for Codex Mainloop](https://github.com/benjaminstelzer/scoville-suite-for-codex-mainloop)
 for Codex, or [Scoville Suite](https://github.com/benjaminstelzer/scoville-suite)
 for Claude Code and other Agent Skills hosts. Both include Code, Plan, UI,
-Handoff and Project Context Cleanup. The Codex edition adds Workflow, Ask and Setup. Workflow is Codex-only
-for now because Codex is my daily driver. A Claude Code version is planned.
+Handoff, Project Context Cleanup and Skillwriter. Mainloop adds Workflow, Ask
+and Setup. It is the maintained Codex edition; migration from earlier copies
+is explicit and preserves personal settings.
 
-[Scoville Suite for Codex Mainloop](https://github.com/benjaminstelzer/scoville-suite-for-codex-mainloop)
-keeps planning, coding and checks in the current chat, with read-only exploration
-and fresh independent reviews. Install it separately from the original Codex suite.
-
-- [Workflow for Codex](https://github.com/benjaminstelzer/scoville-suite-for-codex/tree/main/members/scoville-workflow-for-codex)
-  coordinates a repository Plan across manager agents, workers and reviewers.
+- [Workflow for Codex](https://github.com/benjaminstelzer/scoville-suite-for-codex-mainloop/tree/main/packages/scoville-workflow-for-codex)
+  runs one original Step at a time in the current chat, with read-only Explorers
+  and fresh independent Reviewers.
 - [Code](https://github.com/benjaminstelzer/scoville-code)
   provides engineering guidance for implementation, diagnosis and review,
   with checks proportionate to the consequences of a mistake.
@@ -75,17 +77,20 @@ and fresh independent reviews. Install it separately from the original Codex sui
   covers interface structure, wording, interaction and rendered checks,
   including plugin-owned WordPress admin pages.
 - [Handoff](https://github.com/benjaminstelzer/scoville-handoff)
-  turns unfinished work into a continuation prompt for transfers outside Workflow.
+  turns unfinished work into a continuation prompt for requested transfers.
 - [Ask for Codex](https://github.com/benjaminstelzer/scoville-ask-for-codex)
   gets independent read-only advice from configured Codex or Claude advisers.
-- [Setup](https://github.com/benjaminstelzer/scoville-suite-for-codex/tree/main/members/scoville-setup)
-  manages the project's model and Workflow settings.
+- [Setup](https://github.com/benjaminstelzer/scoville-suite-for-codex-mainloop/tree/main/packages/scoville-setup)
+  manages the project's fixed model pairs and explicit legacy migration.
 
-- [Project Context Cleanup](https://github.com/benjaminstelzer/scoville-suite/tree/main/members/scoville-project-context-cleanup)
+- [Project Context Cleanup](https://github.com/benjaminstelzer/scoville-suite/tree/main/packages/scoville-project-context-cleanup)
   handles requested edits to project rules and index text while preserving meaning,
   scope and record ownership.
 
-Code, Plan, UI, Handoff and Ask are also available on their own.
+- [Skillwriter](https://github.com/benjaminstelzer/scoville-skillwriter)
+  writes and reviews Skills and reusable prompts for current frontier models.
+
+Code, Plan, UI, Handoff, Ask and Skillwriter are also available on their own.
 Workflow, Setup and Project Context Cleanup come through their suites.
 
 ## Applications
@@ -113,7 +118,7 @@ evaluate the next runs against earlier results, checking the original failure
 and effects elsewhere. Repeated searches, unnecessary checks and oversized
 output matter because they consume time and context needed for the task.
 
-I deliberately test with smaller models than the ones I use day to day.
-The instructions need to work without a stronger model filling in missing
-context or resolving ambiguities. Failures in those runs show where the
-wording, scope or sequence still needs work.
+I use gpt-6.1-sol with low reasoning as the baseline for targeted model tests.
+The cases check actual actions, preserved boundaries and whether the result
+helps its next recipient. Source review and shorter text alone do not establish
+that a model follows the instructions.
