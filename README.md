@@ -32,27 +32,6 @@ changed Steps and the complete Work Item. Findings return to one bounded
 correction. Accepted progress and versionable changes go into Plan and Git.
 Code supplies the engineering rules, and UI adds interface and rendered checks.
 
-```mermaid
-flowchart TD
-  plan["Plan: goal, Steps and acceptance"] --> select["Current chat: select one original Step"]
-  select --> inquiry{"Need investigation?"}
-  inquiry -->|yes| explore["Read-only Explorer"]
-  explore --> implement["Current chat: implement and check"]
-  inquiry -->|no| implement
-  implement --> needed{"Changes or open Step review?"}
-  needed -->|yes| review["Fresh independent Step Reviewer"]
-  review --> findings{"Material findings?"}
-  findings -->|yes| implement
-  findings -->|no| record["Record accepted progress; commit versionable changes"]
-  needed -->|no| record
-  record --> more{"More Steps?"}
-  more -->|yes| select
-  more -->|no| closure["Fresh closure review: all Steps and Acceptance"]
-  closure --> accepted{"Acceptance met?"}
-  accepted -->|no| select
-  accepted -->|yes| done["Record Work Item completion"]
-```
-
 A small fix may need only Code, or Code and UI. Longer tasks add planning
 and the Workflow loop while retaining the same engineering foundation.
 
